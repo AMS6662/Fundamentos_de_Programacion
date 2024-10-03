@@ -20,4 +20,4 @@ lista numerada:
 _italica_ 
 ***italica negrita***
 
-![imagen programación] (https://d2a5isokysfowx.cloudfront.net/wp-content/uploads/2022/03/ramas-de-la-programacion-scaled.jpg)
+![imagen programación](https://d2a5isokysfowx.cloudfront.net/wp-content/uploads/2022/03/ramas-de-la-programacion-scaled.jpg)
