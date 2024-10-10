@@ -1,3 +1,9 @@
+#include <iostream>
+#include <limits>
+#include <iomanip>
+#include <locale>
+using namespace std;
+
 //1.1 Declare una variable tipo int que tenga el número de materias que estás
 cursando actualmente.
 //1.2 Declare una variable tipo int que guarde el valor del cuatrimestre que
