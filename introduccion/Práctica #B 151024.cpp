@@ -8,49 +8,42 @@ using namespace std;
 
 int main()
 {
- //Ejercicio 1 to be reworked on
-int n1 = 3, n2 = 5, n3 = 2, n4 = 1, n5 = 10, n6 = 8;
-int n7;
-string pregunta = "Introduzca la operación: ";
-string respuesta = "El resultado es: ";
 
-// 1) 3 + 5 * 2 / 2 – 1 
-cout << pregunta;
-cin >> n7;
-cout << endl;
-n7 = (n1 + n2) * n2 * n2 - n4;
-cout << respuesta << n7 << endl;
+// Realiza un código que ejecute las siguientes operaciones e imprima los resultados de
+// ejecutar cada operación usando la instrucción cin
+	string pregunta = "Ingrese la ecuación: ", respuesta = "El resultado es: ", input;
+	int ec1, ec2, ec3, ec4;
+	float ec5;
+	
+	// 1) 3 + 5 * 2 / 2 – 1
+	cout << pregunta;
+	cin >> input;
+	ec1 = (3 + 5 * 2 / 2 - 1);
+	cout << respuesta << ec1 << endl;
 
-// 2) 3 + 10 / 2 – 1
-cout << pregunta;
-cin >> n7;
-cout << endl;
-n7 = n1 + n5 / n3 - n4;
-cout << respuesta << n7 << endl;
+	//2) 3 + 10 / 2 – 1
+	cout << pregunta;
+	cin >> input;
+	ec2 = (3 + 10 / 2 - 1);
+	cout << respuesta << ec2 << endl;
 
+	//3) 3 + 5 – 1
+	cout << pregunta;
+	cin >> input;
+	ec3 = (3 + 5 - 1);
+	cout << respuesta << ec3 << endl;
 
-// 3) 3 + 5 – 1 
-cout << pregunta;
-cin >> n7;
-cout << endl;
-n7 = n1 + n2 - n4;
-cout << respuesta << n7 << endl;
+	//4) 8 – 1
+	cout << pregunta;
+	cin >> input;
+	ec4 = (8 - 1);
+	cout << respuesta << ec4 << endl;
 
-// 4) 8 – 1
-cout << pregunta;
-cin >> n7;
-cout << endl;
-n7 = n6 - n1;
-cout << respuesta << n7 << endl;
-
-// 5) 1 / 3 * 3
-cout << pregunta;
-cin >> n7;
-cout << endl;
-n7 = n4 / n1 * n1;
-cout << respuesta << n7 << endl;
-  //side-eye
-
+	//5) 1 / 3 * 3
+	cout << pregunta;
+	cin >> input;
+	ec5 = (1.0 / 3 * 3);
+	cout << respuesta << ec5 << endl;
 
 //1.2 Escriba el código que pregunte al usuario por un número y escriba
 // el resultado de la  potencia del número. De la siguiente manera: 
