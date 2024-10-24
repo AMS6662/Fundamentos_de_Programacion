@@ -43,12 +43,55 @@ int main()
     else
     {
         cout << "Es menor de edad" << endl;
+        cout << endl;
     }
 
     /*4. Solicitar la temperatura si esta es menor a 10 grados, escribir en pantalla “hace mucho frío”, si la temperatura es entre mayor a 10
     grados y menor a 17 grados, escribir en pantalla “hace frío” y por último si es mayor a 17 grados, escribir en pantalla “el clima es templado”.*/
+    int temp;
+
+    cout << "Ingrese la temperatura: ";
+    cin >> temp;
+    cout << endl;
+
+    if (temp < 10)
+    {
+        cout << "Hace mucho frio" 
+            << endl;
+    }
+    if (temp >= 10 
+        and temp <= 17)
+    {
+        cout << "Hace frio" 
+            << endl;
+    }
+    if (temp > 17)
+    {
+        cout << "El clima es templado"
+            << endl;
+    }
+
     /*5. Preguntar si al usuario si está a favor de la paz, guardar en una variable tipo char llamada voto, validar si el voto es ‘S’ o el voto es
     ‘N’ escribir en pantalla “voto valido” en caso de que sea cualquier otro carácter escribir, “voto invalido”*/
+    char voto; 
+
+    cout << "Esta a favor de la paz?" << endl;
+    cout << "S/N: ";
+    cin >> voto;
+
+    if (voto == 's' 
+        or voto == 'n' 
+        or voto == 'S' 
+        or voto == 'N')
+    {
+        cout << "Voto valido" << endl;
+    }
+    else
+    {
+        cout << "Voto invalido";
+    }
+
+
     /*6. Preguntar al usuario cuantas horas ha trabajado el empleado durante la semana, si, el empleado trabajo más de 40 horas, el excedente de horas
     se multiplicará por 75 pesos y publicar este cálculo en pantalla que será el bono del empleado.*/
     /*7. Crear dos variables de tipo int, que guarden el día y mes, del cumpleaños del usuario. Si la fecha corresponde a mes 9 y día 15, escribir en pantalla, “Feliz cumpleaños”*/
@@ -59,3 +102,5 @@ int main()
     /*10. Crear un programa en C++ que determine cuantos hot cakes se pueden hacer basado en la pregunta anterior.* /
     */
 }
+
+
