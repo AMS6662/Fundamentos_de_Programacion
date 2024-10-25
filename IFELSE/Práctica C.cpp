@@ -4,27 +4,25 @@
 #include <locale>
 using namespace std;
 
-
 int main()
-{
-	// PRÁCTICA C
+{	// PRÁCTICA C
 /** 1.1 Escriba el código que pregunte al usuario por un número y escribir el resultado del cuadrado.De la siguiente manera :
 Ingrese un número : 5
 El cuadrado de 5 es 25*/
 	int numero;
 	double power;
 
-	cout << "Ingrese un número: ";
+	cout << "Ingrese un numero: ";
 	cin >> numero;
 	cout << endl;
 	power = pow(numero, 2);
 	cout << "El cuadrado de " << numero << " es: " << power << endl;
 	cout << endl;
 
-/*1.2 Escriba un código que solicite un número entero e imprima los resultados de x, 2x, 3x,
-4x y 5x. Donde x es el número ingresado por el usuario, y los subsecuentes implican
-multiplicar por 2, multiplicar por 3, multiplicar por 4 y multiplicar por 5, y escribir el
-resultado en el siguiente formato : 7 / 7 -- 14 -- 21 -- 28 -- 35*/
+	/*1.2 Escriba un código que solicite un número entero e imprima los resultados de x, 2x, 3x,
+	4x y 5x. Donde x es el número ingresado por el usuario, y los subsecuentes implican
+	multiplicar por 2, multiplicar por 3, multiplicar por 4 y multiplicar por 5, y escribir el
+	resultado en el siguiente formato : 7 / 7 -- 14 -- 21 -- 28 -- 35*/
 
 	int c1, c2, c3, c4, c5;
 
@@ -38,10 +36,9 @@ resultado en el siguiente formato : 7 / 7 -- 14 -- 21 -- 28 -- 35*/
 	cout << c1 << " / " << c2 << " -- " << c3 << " -- " << c4 << " - " << c5 << endl;
 	cout << endl;
 
-/*1.3 Escriba un programa que pregunte al usuario por su peso en kilogramos y lo
-convierta en libras, el factor de conversión es 2.2 libras por un kilo*/
-	int peso;
-	double libras = 2.2, conversion;
+	/*1.3 Escriba un programa que pregunte al usuario por su peso en kilogramos y lo
+	convierta en libras, el factor de conversión es 2.2 libras por un kilo*/
+	double libras = 2.2, conversion, peso;
 
 	cout << "Ingrese su peso en kilogramos: ";
 	cin >> peso;
@@ -50,10 +47,10 @@ convierta en libras, el factor de conversión es 2.2 libras por un kilo*/
 	cout << "Su peso en libras es: " << conversion << endl;
 	cout << endl;
 
-/*1.4 Escriba el código de un programa que pregunte por 3 números (use 3 instrucciones de
-entrada). Cree las tres variables de entrada, adicionalmente cree una variable que se
-llame Total y Promedio, donde Total contendrá la suma de las tres variables y Promedio
-que será el cálculo del promedio de los 3 números.*/
+	/*1.4 Escriba el código de un programa que pregunte por 3 números (use 3 instrucciones de
+	entrada). Cree las tres variables de entrada, adicionalmente cree una variable que se
+	llame Total y Promedio, donde Total contendrá la suma de las tres variables y Promedio
+	que será el cálculo del promedio de los 3 números.*/
 	string pregunta = "Ingrese un numero: ";
 	int n1, n2, n3, total;
 	double promedio;
@@ -75,9 +72,9 @@ que será el cálculo del promedio de los 3 números.*/
 	cout << "El promedio de los números es: " << promedio << endl;
 	cout << endl;
 
-/*1.5 Escriba un cálculo que calcule la propina de un Total, donde le pregunte al usuario por
-el total de la cuenta, y el porcentaje de propina a aplicar y guardarlo en una variable que
-se llame Porcentaje y como resultado imprima la cantidad a dar de propina.*/
+	/*1.5 Escriba un cálculo que calcule la propina de un Total, donde le pregunte al usuario por
+	el total de la cuenta, y el porcentaje de propina a aplicar y guardarlo en una variable que
+	se llame Porcentaje y como resultado imprima la cantidad a dar de propina.*/
 	int cuenta;
 	float propina, porcentaje;
 
@@ -91,10 +88,10 @@ se llame Porcentaje y como resultado imprima la cantidad a dar de propina.*/
 
 	cout << "La cantidad de propina a dar es: " << porcentaje << endl;
 	cout << endl;
-	
-/*1.6 Escriba el código que solicite un número al usuario y si este número es mayor a 100,
-que imprima “El número es mayor a 100”, de lo contrario que imprima “El número es
-menor o igual que 100”*/
+
+	/*1.6 Escriba el código que solicite un número al usuario y si este número es mayor a 100,
+	que imprima “El número es mayor a 100”, de lo contrario que imprima “El número es
+	menor o igual que 100”*/
 	int n4;
 
 	cout << "Ingrese un número: ";
@@ -112,9 +109,9 @@ menor o igual que 100”*/
 		cout << endl;
 	}
 
-/*1.7 Escriba el código que solicite un número al usuario si este número es menor a cero
-entonces imprima que “el número es negativo”, de lo contrario imprimir el “número es
-positivo*/
+	/*1.7 Escriba el código que solicite un número al usuario si este número es menor a cero
+	entonces imprima que “el número es negativo”, de lo contrario imprimir el “número es
+	positivo*/
 	int n5;
 
 	cout << "Ingrese un número positivo o negativo: ";
@@ -132,11 +129,11 @@ positivo*/
 		cout << endl;
 	}
 
-/*1.8 Escriba un programa que pregunte por el mail del usuario y guardarlo en una variable
-llamada “Miemail”, y luego que pregunte por un password y se guarde en una variable
-llamada “Password_Ingresado”, validar si el password es igual a “12345” entonces
-imprimir “Felicidades password correcto” de otra manera imprimir “Su password es
-incorrecto”*/
+	/*1.8 Escriba un programa que pregunte por el mail del usuario y guardarlo en una variable
+	llamada “Miemail”, y luego que pregunte por un password y se guarde en una variable
+	llamada “Password_Ingresado”, validar si el password es igual a “12345” entonces
+	imprimir “Felicidades password correcto” de otra manera imprimir “Su password es
+	incorrecto”*/
 	string miEmail;
 	int Password_Ingresado;
 
@@ -157,6 +154,7 @@ incorrecto”*/
 		cout << "Su password es incorrecto" << endl;
 		cout << endl;
 	}
+
 
 /*1.9 Crear un código que convierta de grados farenheit a grados centígrados, usando una
 variable llamada Farenheith; basado en la siguiente formula: (Farenheit − 32) ∗ 5/9
@@ -193,16 +191,16 @@ Con el resultado desplegar los siguientes letreros en caso de que la masa corpor
 >= 30 y < 35 Obeso Clase 1
 >= 35 y < 40 Obeso Clase 2
 >= 40 Obeso Clase 3*/
-	float estatura, masaCorporal, peso;
+	float estatura, masaCorporal, peso2;
 
 	cout << "Ingrese su peso: ";
-	cin >> peso;
+	cin >> peso2;
 	cout << endl;
 	cout << "Ingrese su altura: ";
 	cin >> estatura;
 	cout << endl;
 
-	masaCorporal = peso / (estatura * estatura);
+	masaCorporal = peso2 / (estatura * estatura);
 	cout << "El IMC es: " << masaCorporal << endl;
 	cout << endl;
 
