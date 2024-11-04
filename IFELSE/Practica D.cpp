@@ -88,4 +88,41 @@ números. Cree el algoritmo, diagrama de flujo y código en C# */
     {
         cout << "El mínimo es " << B << " y el máximo es " << C;
     }
+
+/*1.18 Crear un programa al que le solicitemos la hora HH, MM, SS y nos calcule la hora
+dentro de un segundo más tarde. Leeremos las horas minutos y segundos como números
+enteros*/
+
+	int HH, MM, SS;
+
+	cout << "Ingrese la hora: ";
+	cin >> HH;
+	cout << endl;
+
+	cout << "Ingrese los minutos: ";
+	cin >> MM;
+	cout << endl;
+
+	cout << "Ingrese los segundos: ";
+	cin >> SS;
+	cout << endl;
+
+	if (SS != 59 and MM != 59)
+	{
+		SS++;
+		cout << "La hora es " << HH << ":" << MM << ":" << SS;
+	}
+
+	if (SS == 59 and MM != 59)
+	{
+		MM++;
+		cout << "La hora es: " << HH << ":" << MM << ":00";
+	}
+
+	if (MM == 59 and SS == 59)
+	{
+		HH++;
+		cout << "La hora es: " << HH << ":00:00";
+	}
+
 }
