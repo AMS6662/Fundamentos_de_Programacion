@@ -3,7 +3,7 @@
 
  /*1. Imprimir los números naturales usando la instrucción while. Crear una variable que incremente el número desde cero.*/
 int i = 0;
-while (i <= 9);
+while (i <= 9)
 {
 cout << i << " , ";
 i++;
