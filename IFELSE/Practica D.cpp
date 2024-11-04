@@ -67,7 +67,7 @@ números. Cree el algoritmo, diagrama de flujo y código en C# */
 
     if (C > B and A < B)
     {
-        cout << "El mínimo es " << A << " y el máximo es " << C; 
+        cout << "El mínimo es " << A << " y el máximo es " << C;
     }
 
     //B max A min
@@ -88,6 +88,4 @@ números. Cree el algoritmo, diagrama de flujo y código en C# */
     {
         cout << "El mínimo es " << B << " y el máximo es " << C;
     }
-
-
 }
