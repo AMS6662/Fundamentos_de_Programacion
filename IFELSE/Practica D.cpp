@@ -125,4 +125,32 @@ enteros*/
 		cout << "La hora es: " << HH << ":00:00";
 	}
 
+/*1.19 Determinar el precio del boleto de ida y vuelta en avión, conociendo la distancia a
+recorrer y sabiendo que si el número de días de estancia es superior a 7 y la distancia
+superior a 800 km el billete tiene una reducción del 30%. El precio por km es de 2.5
+dólares. */
+	int dias;
+	double recorrido, precioKm = 2.5;
+
+	cout << "Ingrese la distancia a recorrer: ";
+	cin >> recorrido;
+	cout << endl;
+
+	cout << "Ingrese los dias de estancia: ";
+	cin >> dias;
+	cout << endl;
+
+	double precioBoleto = precioKm * recorrido;
+
+
+	if (recorrido >= 800 and dias >= 7)
+	{
+		double descuento = precioBoleto * .70;
+		cout << "El precio del boleto es: " << descuento << endl;
+	}
+
+	else
+	{
+		cout << "El precio del boleto es: " << precioBoleto << endl;
+	}
 }
