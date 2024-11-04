@@ -29,11 +29,14 @@ i++;
     do
     {
         cout << "Menu opciones " << endl;
-        cout << "1. Ejecuctar opcion 1" << endl; 
+        cout << "1. Ejecuctar opcion 1" << endl;
         cout << "2. Ejecuctar opcion 2" << endl;
         cout << "3. Ejecuctar opcion 3" << endl;
         cout << "4. Ejecuctar opcion 4" << endl;
-        cout << "5. Ejecuctar opcion 5";
+        cout << "5. Ejecuctar opcion 5" << endl;
         cout << "6. Salir " << endl;
+        cin >> opcion1;
+     
     } while (opcion1 != 6);
+
 }
