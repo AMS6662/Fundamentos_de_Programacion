@@ -153,4 +153,68 @@ dólares. */
 	{
 		cout << "El precio del boleto es: " << precioBoleto << endl;
 	}
+
+	/*1.20 Escribir las instrucciones apropiadas para cada una de las siguientes condiciones:
+	* 
+a) Si un ángulo es igual a 90 grados, imprimir el mensaje "El ángulo es un ángulo
+recto" sino imprimir el mensaje "El ángulo no es un ángulo recto".*/
+	int angulo;
+
+	cout << "Ingrese un angulo: ";
+	cin >> angulo;
+	cout << endl;
+
+	if (angulo == 90)
+	{
+		cout << "El angulo es un angulo recto" << endl;
+		cout << endl;
+	}
+	else
+	{
+		cout << "El angulo no es un angulo recto" << endl;
+		cout << endl;
+	}
+
+
+/*b) Si la temperatura es superior a 100 grados, visualizar el mensaje “por encima
+del punto de ebullición del agua” sino visualizar el mensaje “por debajo del
+punto de ebullición del agua”.*/
+	int temperatura;
+
+	cout << "Ingresar la temperatura del agua: ";
+	cin >> temperatura;
+	cout << endl;
+
+	if (temperatura >= 100)
+	{
+		cout << "Por encima del punto de ebullicion del agua" << endl;
+		cout << endl;
+	}
+	else
+	{
+		cout << "Por debajo del punto de ebullicion del agua" << endl;
+		cout << endl;
+	}
+
+
+/*c) Recibir un número, Si este número es positivo, sumar el número a total de
+positivos usando una variable que acumule los números negativos, sino sumar al
+total de negativos usando una variable que acumule los números negativos.*/
+	int n1;
+
+	cout << "Ingrese un numero: ";
+	cin >> n1;
+	cout << endl;
+
+	if (n1 % 2)
+	{
+
+	}
+
+
+/*d) Si “x” es mayor que “y”, y “z” es menor que “y”, imprimir “x”.*/
+
+/*e) Si la distancia es mayor que 20 y menos que 35, crear y leer un valor para luna
+variable de tipo entero llamada “tiempo”. */
+
 }
