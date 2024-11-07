@@ -77,8 +77,15 @@ de salir entonces terminará el programa.*/
 
 			else if (opciones == 'd')
 			{
-				total = numero1 / numero2;
-				cout << "El resultado de la division es " << total << endl;
+				if (numero2 != 0)
+				{
+					total = numero1 / numero2;
+					cout << "El resultado de la division es " << total << endl;
+				}
+				else
+				{
+					cout << "Operacion invalida" << endl;
+				}
 			}
 
 			else if (opciones == 'e')
