@@ -103,6 +103,70 @@ de salir entonces terminará el programa.*/
 
 	} while (opciones != 's');
 
+	/*1.23 Crear un programa en C++ que “simule” dos operaciones básicas de un cajero que es
+retiro y consulta de saldo, el proceso debe considerar la lectura y validación de banda
+magnética o chip*. Si la tarjeta es invalida, terminar el proceso usando la instrucción
+“break “de lo contrario pedir un pin de 4 dígitos, validar que solo sean 4 dígitos, el digito a
+validar será “1234” de lo contrario será pin invalido.
+Las opciones que deberá mostrar el cajero si el chip y el pin son válidos será:
+a) Consulta de saldo
+b) Retiro de dinero 
+c) Cancelar operacion
+
+El saldo inicial de la cuenta del cliente será 3,450.00 pesos, en la opción de retiro, deberá
+validar si la cantidad que quiere retirar es mayor al saldo, entonces desplegará la opción
+fondos insuficientes, y terminará la operación.
+De tener fondos suficientes se le restará al saldo inicial y mostrará el saldo remanente
+antes de terminar la operación.
+Si desea cancelar la operación deberá salir del menú.
+Para la consulta, solo deberá mostrar el saldo y terminar la operación con el cajero.*/
+
+	int chip = 0;
+	int nip = 0;
+	float saldo = 3450.00;
+	char operaciones = 0;
+
+		cout << "Para insertar su tarjeta en el lector presione 2" << endl;
+		cin >> chip;
+		cout << endl;
+
+		switch (chip)
+		{
+		case 1:
+			cout << "Tarjeta invalida" << endl;
+			break;
+
+		case 2:
+			cout << "Ingrese su nip" << endl;
+			cin >> nip;
+			cout << endl;
+			if (nip == 1234)
+			{
+				cout << "Menu de operaciones Cajero Unitec" << endl;
+				cout << endl;
+				cout << "a) Consulta de saldo" << endl;
+				cout << "b) Retiro de dinero" << endl;
+				cout << "c) Cancelar operacion" << endl;
+				cin >> operaciones;
+
+				while (operaciones == 'a') //this is an infinite loop rn, it needs a stop command
+				{
+					cout << "Su saldo es " << saldo << endl;
+				}
+
+
+
+
+
+			}
+			else
+			{
+				cout << "Pin invalido" << endl;
+			}
+			break;
+
+		}
+
 
 
 }
