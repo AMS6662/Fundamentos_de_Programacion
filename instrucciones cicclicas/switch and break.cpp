@@ -81,5 +81,39 @@ int main()
 		i++;
 	} */
 
+	{
+	srand(time(NULL)); //semilla
+	int castigo = 0;
+	int vida = 12;
+	int premio = 0;
+
+	cout << "Vida inicial: " << vida << endl;
+
+
+	while (vida > 0)
+	{
+		vida--; //deducir uno de vida
+		cout << "Costo por ciclo: " << vida << endl;
+		castigo = rand() % 2; // castigo?
+
+		if (castigo == 1)
+		{
+			castigo = castigo - 3;
+		}
+
+		premio = rand() % 2;
+		if (premio == 1)
+		{
+			vida = vida + 1;
+			cout << "Castigo: " << vida << endl;
+		}
+
+		cout << "Vida despues de ciclo: " << vida << endl;
+
+	}
+
+
+}
+
 
 }
