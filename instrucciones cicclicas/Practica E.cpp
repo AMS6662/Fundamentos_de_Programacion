@@ -35,6 +35,7 @@ en cero y el usuario podrá hacer la siguiente operación, hasta que el usuario 
 de salir entonces terminará el programa.*/
 
 	char opciones = 'a';
+	int numero1, numero2, total;
 
 	do
 	{
@@ -43,13 +44,79 @@ de salir entonces terminará el programa.*/
 		cout << "b) Resta de dos operandos" << endl;
 		cout << "c) Multiplicacion de dos operandos" << endl;
 		cout << "d) Division de dos operandos" << endl;
+		cout << "e) Residuo de dos operandos" << endl;
 		cout << "s) Salir del menu" << endl;
 		cin >> opciones;
+
+		do
+		{
+			cout << "Ingrese el primer numero: ";
+			cin >> numero1;
+			cout << endl;
+			cout << "Ingrese el segundo numero: ";
+			cin >> numero2;
+			cout << endl;
+
+			total = numero1 + numero2;
+			cout << "El resultado de la suma es " << total << endl;
+
+		} while (opciones == 'a');
+
+		while (opciones == 'b')
+		{
+			cout << "Ingrese el primer numero: ";
+			cin >> numero1;
+			cout << endl;
+			cout << "Ingrese el segundo numero: ";
+			cin >> numero2;
+			cout << endl;
+
+			total = numero1 - numero2;
+			cout << "El resultado de la resta es " << total << endl;
+
+		}
+
+		while (opciones == 'c')
+		{
+			cout << "Ingrese el primer numero: ";
+			cin >> numero1;
+			cout << endl;
+			cout << "Ingrese el segundo numero: ";
+			cin >> numero2;
+			cout << endl;
+
+			total = numero1 * numero2;
+			cout << "El resultado de la multiplicacion es " << total << endl;
+
+		}
+
+		while (opciones == 'd')
+		{
+			cout << "Ingrese el primer numero: ";
+			cin >> numero1;
+			cout << endl;
+			cout << "Ingrese el segundo numero: ";
+			cin >> numero2;
+			cout << endl;
+
+			total = numero1 / numero2;
+			cout << "El resultado de la division es " << total << endl;
+		}
+
+		while (opciones == 'e')
+		{
+			cout << "Ingrese el primer numero: ";
+			cin >> numero1;
+			cout << endl;
+			cout << "Ingrese el segundo numero: ";
+			cin >> numero2;
+			cout << endl;
+
+			total = numero1 % numero2;
+			cout << "El resultado del residuo es " << total << endl;
+		}
+
 	} while (opciones != 's');
-
-
-
-
 
 
 }
