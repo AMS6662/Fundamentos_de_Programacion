@@ -48,7 +48,7 @@ de salir entonces terminará el programa.*/
 		cout << "s) Salir del menu" << endl;
 		cin >> opciones;
 
-		do
+		if (opciones != 's')
 		{
 			cout << "Ingrese el primer numero: ";
 			cin >> numero1;
@@ -57,66 +57,45 @@ de salir entonces terminará el programa.*/
 			cin >> numero2;
 			cout << endl;
 
-			total = numero1 + numero2;
-			cout << "El resultado de la suma es " << total << endl;
+			if (opciones == 'a')
+			{
+				total = numero1 + numero2;
+				cout << "El resultado de la suma es " << total << endl;
+			}
 
-		} while (opciones == 'a');
+			else if (opciones == 'b')
+			{
+				total = numero1 - numero2;
+				cout << "El resultado de la resta es " << total << endl;
+			}
 
-		while (opciones == 'b')
-		{
-			cout << "Ingrese el primer numero: ";
-			cin >> numero1;
-			cout << endl;
-			cout << "Ingrese el segundo numero: ";
-			cin >> numero2;
-			cout << endl;
+			else if (opciones == 'c')
+			{
+				total = numero1 * numero2;
+				cout << "El resultado de la multiplicacion es " << total << endl;
+			}
 
-			total = numero1 - numero2;
-			cout << "El resultado de la resta es " << total << endl;
+			else if (opciones == 'd')
+			{
+				total = numero1 / numero2;
+				cout << "El resultado de la division es " << total << endl;
+			}
+
+			else if (opciones == 'e')
+			{
+				total = numero1 % numero2;
+				cout << "El resultado del residuo es " << total << endl;
+			}
+
+			numero1 = 0;
+			numero2 = 0;
+			total = 0;
 
 		}
 
-		while (opciones == 'c')
-		{
-			cout << "Ingrese el primer numero: ";
-			cin >> numero1;
-			cout << endl;
-			cout << "Ingrese el segundo numero: ";
-			cin >> numero2;
-			cout << endl;
-
-			total = numero1 * numero2;
-			cout << "El resultado de la multiplicacion es " << total << endl;
-
-		}
-
-		while (opciones == 'd')
-		{
-			cout << "Ingrese el primer numero: ";
-			cin >> numero1;
-			cout << endl;
-			cout << "Ingrese el segundo numero: ";
-			cin >> numero2;
-			cout << endl;
-
-			total = numero1 / numero2;
-			cout << "El resultado de la division es " << total << endl;
-		}
-
-		while (opciones == 'e')
-		{
-			cout << "Ingrese el primer numero: ";
-			cin >> numero1;
-			cout << endl;
-			cout << "Ingrese el segundo numero: ";
-			cin >> numero2;
-			cout << endl;
-
-			total = numero1 % numero2;
-			cout << "El resultado del residuo es " << total << endl;
-		}
 
 	} while (opciones != 's');
+
 
 
 }
