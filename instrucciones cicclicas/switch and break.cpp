@@ -66,12 +66,20 @@ int main()
 
     default:
         break;
-    
-
-
     }
 
 
+  /*taking as an exmaple excercice 2.24 frompractice E
+    
+	srand(time(NULL)); //semilla
+	int castigo = 0, i = 0;
+	while (i <= 10) 
+	{
+		castigo = rand() % 2; //el numero after % es el limite del comando, por eso esto solo genera 0 o 1
+		// si el limite fuera 3 (rand() % 3) solo se generarian 0, 1 y 2
+		cout << castigo << endl;
+		i++;
+	} */
 
 
 }
