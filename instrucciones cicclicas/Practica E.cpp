@@ -110,7 +110,7 @@ magnética o chip*. Si la tarjeta es invalida, terminar el proceso usando la ins
 validar será “1234” de lo contrario será pin invalido.
 Las opciones que deberá mostrar el cajero si el chip y el pin son válidos será:
 a) Consulta de saldo
-b) Retiro de dinero 
+b) Retiro de dinero
 c) Cancelar operacion
 
 El saldo inicial de la cuenta del cliente será 3,450.00 pesos, en la opción de retiro, deberá
@@ -123,24 +123,26 @@ Para la consulta, solo deberá mostrar el saldo y terminar la operación con el 
 
 	int chip = 0;
 	int nip = 0;
-	float saldo = 3450.00;
+	float saldo = 3450.00, retiro, saldoFinal;
 	char operaciones = 0;
 
-		cout << "Para insertar su tarjeta en el lector presione 2" << endl;
-		cin >> chip;
+	cout << "Para insertar su tarjeta en el lector presione 2" << endl;
+	cin >> chip;
+	cout << endl;
+
+	switch (chip)
+	{
+	case 1:
+		cout << "Tarjeta invalida" << endl;
+		break;
+
+	case 2:
+		cout << "Ingrese su nip" << endl;
+		cin >> nip;
 		cout << endl;
-
-		switch (chip)
+		if (nip == 1234)
 		{
-		case 1:
-			cout << "Tarjeta invalida" << endl;
-			break;
-
-		case 2:
-			cout << "Ingrese su nip" << endl;
-			cin >> nip;
-			cout << endl;
-			if (nip == 1234)
+			do
 			{
 				cout << "Menu de operaciones Cajero Unitec" << endl;
 				cout << endl;
@@ -149,23 +151,40 @@ Para la consulta, solo deberá mostrar el saldo y terminar la operación con el 
 				cout << "c) Cancelar operacion" << endl;
 				cin >> operaciones;
 
-				while (operaciones == 'a') //this is an infinite loop rn, it needs a stop command
+				if (operaciones == 'a') //this is an infinite loop rn, it needs a stop command
 				{
 					cout << "Su saldo es " << saldo << endl;
 				}
 
+				if (operaciones == 'b')
+				{
+					cout << "Su saldo es " << saldo << endl;
+					cout << "Ingrese el monto a retirar" << endl;
+					cin >> retiro;
+					saldoFinal = saldo - retiro;
 
+					if (retiro <= saldo)
+					{
+						cout << "Retiro exitoso, el saldo restante es " << saldoFinal << endl;
+					}
+					else
+					{
+						cout << "Saldo insuficiente" << endl;
+					}
+					break;
 
+				}
 
-
-			}
-			else
-			{
-				cout << "Pin invalido" << endl;
-			}
-			break;
+			} while (operaciones != 'c');
 
 		}
+		else
+		{
+			cout << "Pin invalido" << endl;
+		}
+		break;
+
+	}
 
 
 
