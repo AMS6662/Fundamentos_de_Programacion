@@ -72,4 +72,26 @@ int main()
     cout << endl;
 
 
+    /*Generar el código necesario en C++ solicitando el rango uno máximo y uno mínimo para generar la impresión de los números de manera secuencial regresiva de uno en uno,
+    si ingresa 1 como mínimo y 10 como máximo, deberá imprimir 10,9,8,7,6,5,4,3,2,1 Tip: Declara dos variables enteras (int) e insertalas en la instrucción for.*/
+    int max, min;
+
+    cout << "Ingrese el numero maximo: ";
+    cin >> max;
+    cout << endl;
+
+    cout << "Ingrese el numero minimo: ";
+    cin >> min;
+    cout << endl;
+
+    cout << "El rango de numeros de mayor a menor es ";
+    for (int m = max; m >= min; m--)
+    {
+        cout << m << ", ";
+    }
+    cout << endl;
+
+
+
+
 }
