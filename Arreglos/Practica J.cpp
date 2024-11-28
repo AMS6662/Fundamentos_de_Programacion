@@ -117,5 +117,42 @@ arreglo. Utilice arreglo preconstruido.*/
 	{
 		cout << "El segundo numero mayor es: " << secondGreatest << endl;
 	}
+
+
+/*#6. Realice el programa en C++ que cuente el número de elementos pares e
+impares de un arreglo preconstruido.*/
+
+	vector <int> evnodds
+	{ 56, 86, 16, 62, 53, 77, 25, 94, 62, 27};
+	vector <int> pares;
+	vector <int> impares;
+
+	for (int val = 0; val < evnodds.size(); val++)
+	{
+		if (evnodds[val] % 2 == 0)
+		{
+			pares.push_back(evnodds[val]);
+		}
+
+		else
+		{
+			impares.push_back(evnodds[val]);
+		}
+	}
+
+	cout << "Los numeros pares son: ";
+	for (int i = 0; i < pares.size(); i++)
+	{
+		cout << pares[i] << " ";
+	}
+	cout << endl;
+
+	cout << "Los numeros impares son: ";
+	for (int x = 0 ; x < impares.size(); x++)
+	{
+		cout << impares[x] << " ";
+	}
+	cout << endl;
+
 	
 }
