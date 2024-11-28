@@ -10,31 +10,38 @@
 #include <iostream>
 using namespace std;
 
+//Variables globales: fuera de la función main
+int n1, n2;
+
+
+//Variable local
+void suma(int n1, int n2)
+// void nombre_funcion(tipo identificador , tipo identificador)
+{
+	//Suma con parámetros
+	cout << n1 + n2 << endl;
+}
+
+void pedirNumeros()
+{
+	cout << "Dame el número 1: ";
+	cin >> n1;
+	cout << endl;
+
+	cout << "Dame el numero 2: ";
+	cin >> n2;
+	cout << endl;
+
+}
+
+//funciones
 void hola()
 {
 	cout << "Hola mundo!";
 }
 
-void suma()
-{
-	int n1, n2;
-	cout << "Ingrese numero 1: ";
-	cin >> n1;
-	cout << endl;
-
-	cout << "Ingrese numero 2: ";
-	cin >> n2;
-	cout << endl;
-
-	cout << n1 + n2 << endl;
-}
-
 int main() //Punto de entrada
 {
-	hola();
-	cout << endl;
-
-	suma();
+	pedirNumeros();
+	suma(n1, n2); //n1 y n2 son argumentos
 }
-
-
