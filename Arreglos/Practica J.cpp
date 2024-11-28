@@ -49,21 +49,26 @@ Utilice el arreglo preconstruido*/
 	cout << "El mayor es: " << mayor << endl;
 
 
-	/* #3 Realice el programa en C++ que encuentre el menor elemento de un arreglo de tipo entero.
+/* #3 Realice el programa en C++ que encuentre el menor elemento de un arreglo de tipo entero.
 Utilice el arreglo preconstruido.*/
-int numeros3[10]
-{ 22 , 565, 34, 45, 67, 12, 65, 32, 90, 87 };
+	int numeros3[10]
+	{ 22 , 565, 34, 45, 67, 12, 65, 32, 90, 87 };
 
-vector <int> xnum
-{ 22 , 565, 34, 45, 67, 12, 65, 32, 90, 87 };
+	vector <int> xnum
+	{ 22 , 565, 34, 45, 67, 12, 65, 32, 90, 87 };
 
-int menor = -1;
-for (int i = 0; i <= 9; i++)
-{
-	if (xnum[i] > menor)
+	int menor = xnum[0];
+
+	for (int i = 1; i < xnum.size(); i++)
 	{
-		menor = xnum[i];
+		if (xnum[i] < menor)
+		{
+			menor = xnum[i];
+		}
 	}
+	cout << "El menor es: " << menor << endl;
+
+}
 }
 cout << "El menor es: " << menor << endl;
 
