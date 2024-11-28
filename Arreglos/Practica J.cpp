@@ -67,10 +67,5 @@ Utilice el arreglo preconstruido.*/
 		}
 	}
 	cout << "El menor es: " << menor << endl;
-
-}
-}
-cout << "El menor es: " << menor << endl;
-
 	
 }
