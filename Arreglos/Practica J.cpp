@@ -84,5 +84,38 @@ de tipo entero. Utilice el arreglo preconstruido.*/
 
 	double promedio = sum / avg;
 	cout << "El promedio es: " << promedio << endl;
+
+/*#5 Realice el programa en C++ que encuentre el segundo mayor elemento de un
+arreglo. Utilice arreglo preconstruido.*/
+
+	vector <int> gnum
+	{12, 467, 25, 26, 26, 64, 63, 74, 25 };
+
+	int greatest = -1;
+	int secondGreatest = -1;
+
+	for (int i = 0; i < gnum.size(); i++)
+	{
+		if (gnum[i] > greatest)
+		{
+			secondGreatest = greatest;
+			greatest = gnum[i];
+		}
+
+		else if (gnum[i] > secondGreatest and gnum[i] < greatest)
+		{
+			secondGreatest = gnum[i];
+		}
+
+	}
+	if (secondGreatest == -1)
+	{
+		cout << "No hay un segundo numero mayor" << endl;
+	}
+
+	else
+	{
+		cout << "El segundo numero mayor es: " << secondGreatest << endl;
+	}
 	
 }
