@@ -67,5 +67,22 @@ Utilice el arreglo preconstruido.*/
 		}
 	}
 	cout << "El menor es: " << menor << endl;
+
+
+/*#4 Realice el programa en C++ calcule el promedio de los elementos de un arreglo
+de tipo entero. Utilice el arreglo preconstruido.*/
+	vector <int> ynum
+	{ 23, 54, 64, 65, 76, 86, 9, 85, 2, 94 };
+
+	double sum = 0;
+	int avg = ynum.size();
+
+	for (int i = 0; i < avg; i++)
+	{
+		sum =+ ynum[i];
+	}
+
+	double promedio = sum / avg;
+	cout << "El promedio es: " << promedio << endl;
 	
 }
