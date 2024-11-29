@@ -167,8 +167,102 @@ solicitado hasta 10 veces.*/
 	{
 		cout << multiplicacion[0] * i;
 		cout << endl;
-
 	}
+
+	 /*#8. Realice el programa en C++ que encuentre los tres mayores elementos de un
+ arreglo de 1000 elementos generados de forma aleatoria de tipo entero. Utilice el arreglo
+ preconstruido.*/
+ const int TAMANO = 100;
+ int numeros[TAMANO];
+ int numero, primero, segundo, tercero, temp = 0;
+ // inicializar la semilla 
+ srand(time(NULL));
+
+ for (int i = 0; i <= TAMANO; i++)
+ {
+     numeros[i] = rand() % 101;
+ }
+ primero = numeros[0];
+ segundo = numeros[1];
+ tercero = numeros[2];
+ if (primero < segundo)
+ {
+     int temp = primero;
+     primero = segundo;
+     segundo = temp;
+ }
+ if (primero < tercero)
+ {
+     int temp = primero;
+     primero = tercero;
+     tercero = temp;
+ }
+ if (segundo < tercero)
+ {
+     int temp = segundo;
+     segundo = tercero;
+     tercero = temp;
+ }
+
+ // Encontrar los tres mayores elementos
+ for (int i = 3; i < TAMANO; i++) {
+     if (numeros[i] > primero)
+     {
+         tercero = segundo;
+         segundo = primero;
+         primero = numeros[i];
+     }
+     else if (numeros[i] > segundo)
+     {
+         tercero = segundo;
+         segundo = numeros[i];
+     }
+     else if (numeros[i] > tercero)
+     {
+         tercero = numeros[i];
+     }
+ }
+
+ cout << "Los tres mayores elementos son: " << primero << ", " << segundo << ", " << tercero << endl;
+
+ /*#9 Realice el programa en C++ que encuentre el segundo menor elemento de un
+ arreglo de 1000 elementos de tipo double de forma aleatoria. Utilice el arreglo
+ preconstruido.*/
+
+ const int rAnge = 1001;
+ int vAlores[rAnge];
+ int mayor, segundoMayor, standin = 0;
+
+ srand(time(NULL));
+
+ for (int i = 0; i < 1001; i++)
+ {
+     vAlores[i] = rand() % 1001;
+ }
+
+ mayor = -1;
+ segundoMayor = -1;
+
+ if (mayor < segundoMayor)
+ {
+     int standin = segundoMayor;
+     mayor = segundoMayor;
+     segundoMayor = standin;
+ }
+
+ for (int i = 2; i < rAnge; i++)
+ {
+     if (vAlores[i] > mayor)
+     {
+         segundoMayor = mayor;
+         mayor = vAlores[i];
+     }
+     else if (vAlores[i] > segundoMayor)
+     {
+         segundoMayor = numeros[i];
+     }
+ }
+ cout << "El segundo numero mayor es " << segundoMayor << endl;
 
 	
 }
