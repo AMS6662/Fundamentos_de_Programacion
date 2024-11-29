@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <limits>
 #include <locale>
+#include <cstdlib>
 using namespace std;
 
 int main()
