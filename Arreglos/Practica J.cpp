@@ -154,5 +154,21 @@ impares de un arreglo preconstruido.*/
 	}
 	cout << endl;
 
+/*#7. Realice el programa en C++ que imprima las tablas de multiplicar del numero
+solicitado hasta 10 veces.*/
+
+	int multiplicacion[1];
+
+	cout << "Ingrese un numero: ";
+	cin >> multiplicacion[0];
+	cout << endl;
+
+	for (int i = 1; i < 11; i++)
+	{
+		cout << multiplicacion[0] * i;
+		cout << endl;
+
+	}
+
 	
 }
