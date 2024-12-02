@@ -1,4 +1,4 @@
-/Clases y Objetos
+/*Clases y Objetos
 
 Clases
 Estructura o mapa de la infromación que contiene un objeto
