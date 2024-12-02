@@ -38,27 +38,8 @@ public:
 		cout << endl;
 		for (int i = 0; i < v1.size(); i++)
 		{
-			cout << "Nombre: " << v1[1].nombre << endl;
+			cout << "Nombre: " << v1[i].nombre << endl;
 			cout << "Cuenta: " << v1[i].cuenta << endl;
 		}
 	}
 };
-
-
-int main()
-{
-	vector<Alumno> v;
-	int numAlumnos;
-	cout << "Numero de alumnos a dar de alta: ";
-	cin >> numAlumnos;
-	cout << endl;
-
-	for (int i = 0; i < numAlumnos; i++)
-	{
-		Alumno::altaAlumno(v);
-
-	}
-
-	Alumno::imprimeDatos(v);
-
-}
