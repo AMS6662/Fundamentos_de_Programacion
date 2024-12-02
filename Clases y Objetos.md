@@ -1,5 +1,5 @@
-Clase
+##Clase
 Estructura o mapa de la información que contiene un objeto
 
-Objeto
+##Objeto
 Una instancia de una clase
