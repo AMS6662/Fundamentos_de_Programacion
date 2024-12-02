@@ -11,31 +11,31 @@ using namespace std;
 - Rombo*/
 
 // Cuadrado
-double calcularArea(double lado)
+double areaCuadrado(double lado)
 {
 	return lado * lado;
 }
 
 //Rectangulo
-double calcularArea(int largo, int ancho)
+double areaRectangulo(double largo, double ancho)
 {
 	return largo * ancho;
 }
 
 //Circulo
-double calcularArea(float radio)
+double areaCirculo(double radio)
 {
-	return 3.1416 * sqrt(radio * 2);
+	return 3.1416 * radio * radio;
 }
 
 //Triangulo
-double calcularArea(double base, double altura)
+double areaTriangulo(double base, double altura)
 {
 	return 0.5 * base * altura;
 }
 
 //Rombo
-double calcularArea(double diagonalMayor, double diagonalMenor)
+double areaRombo(double diagonalMayor, double diagonalMenor)
 {
 	return diagonalMayor * diagonalMenor / 2;
 }
@@ -50,8 +50,9 @@ int main() {
 	cout << "Opcion 3: Circulo" << endl;
 	cout << "Opcion 4: Triangulo equilatero" << endl;
 	cout << "Opcion 5: Rombo" << endl;
-	cout << "¿Cual opcion desea ejecutar?" << endl;
+	cout << "Cual opcion desea ejecutar? ";
 	cin >> opcion;
+	cout << endl;
 
 	switch (opcion)
 	{
@@ -62,13 +63,14 @@ int main() {
 		cout << "Ingrese la medida del lado: ";
 		cin >> lado;
 		cout << endl;
-		cout << "El area del cuadrado es " << calcularArea(lado) << endl;
+
+		cout << "El area del cuadrado es " << areaCuadrado(lado) << endl;
 		break;
 	}
-	
+
 	case 2:
 	{
-		int largo, ancho;
+		double largo, ancho;
 		cout << "Rectangulo" << endl;
 
 		cout << "Ingrese el largo: ";
@@ -79,20 +81,20 @@ int main() {
 		cin >> ancho;
 		cout << endl;
 
-		cout << "El area del rectangulo es " << calcularArea(largo, ancho) << endl;
+		cout << "El area del rectangulo es " << areaRectangulo(largo, ancho) << endl;
 		break;
 	}
 
 	case 3:
 	{
-		float radio;
+		double radio;
 		cout << "Circulo" << endl;
 
-		cout << "Ingrese la medida del radio" << endl;
+		cout << "Ingrese la medida del radio: " << endl;
 		cin >> radio;
 		cout << endl;
 
-		cout << "El area del circulo es " << calcularArea(radio) << endl;
+		cout << "El area del circulo es " << areaCirculo(radio) << endl;
 		break;
 
 	}
@@ -110,7 +112,7 @@ int main() {
 		cin >> altura;
 		cout << endl;
 
-		cout << "El area del triangulo es " << calcularArea(base, altura) << endl;
+		cout << "El area del triangulo es " << areaTriangulo(base, altura) << endl;
 		break;
 
 	}
@@ -128,7 +130,7 @@ int main() {
 		cin >> diagonalMenor;
 		cout << endl;
 
-		cout << "La medida del area es " << calcularArea(diagonalMayor, diagonalMenor) << endl;
+		cout << "La medida del area es " << areaRombo(diagonalMayor, diagonalMenor) << endl;
 		break;
 
 	}
@@ -139,7 +141,4 @@ int main() {
 
 	return 0;
 
-
-
 }
-
