@@ -7,6 +7,7 @@ Una instancia   de una clase
 - Encapsulación. Funciones y información son unidas*/
 
 #include <iostream>
+#include <vector>
 using namespace std;
 
 struct Alumno
@@ -18,7 +19,7 @@ public:
 
 	//Funciones de la estructura
 public:
-	static void altaAlumno()
+	static void altaAlumno(vector <Alumno> & v1)
 		{
 		//Tipo de dato -> Alumno alumno <- Nombre de la variable
 		Alumno alumno;
@@ -27,36 +28,37 @@ public:
 
 		cout << "Ingrese su numero de cuenta: ";
 		cin >> alumno.cuenta;
-
-		imprimeDatos(alumno);
+		v1.push_back(alumno);
 
 		}
 
-	static void imprimeDatos(Alumno alumno)
+	static void imprimeDatos(vector <Alumno> v1)
 	{
-		cout << "Nombre: " << alumno.nombre << endl;
-		cout << "Cuenta: " << alumno.cuenta << endl;
+		cout << "Tamano del vector: " << v1.size() << endl;
 		cout << endl;
+		for (int i = 0; i < v1.size(); i++)
+		{
+			cout << "Nombre: " << v1[1].nombre << endl;
+			cout << "Cuenta: " << v1[i].cuenta << endl;
+		}
 	}
 };
 
 
-
 int main()
 {
-	Alumno Alex;
-	Alex.nombre = "Alex";
-	Alex.cuenta = 12345;
-
-	Alumno Angela;
-	Angela.nombre = "Angela";
-	Angela.cuenta = 67890;
-
-	cout << "Nombre: " << Alex.nombre << endl;
-	cout << "Cuenta: " << Alex.cuenta << endl;
+	vector<Alumno> v;
+	int numAlumnos;
+	cout << "Numero de alumnos a dar de alta: ";
+	cin >> numAlumnos;
 	cout << endl;
 
-	cout << "Nombre: " << Angela.nombre << endl;
-	cout << "Cuenta: " << Angela.cuenta << endl;
+	for (int i = 0; i < numAlumnos; i++)
+	{
+		Alumno::altaAlumno(v);
+
+	}
+
+	Alumno::imprimeDatos(v);
 
 }
