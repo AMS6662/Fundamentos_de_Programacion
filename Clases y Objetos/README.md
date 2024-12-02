@@ -1,7 +1,8 @@
 #Clases y Objetos
 
-##Clase
-Estructura o mapa de la información que contiene un objeto
+##Clases
+Estructura o mapa de la infromación que contiene un objeto
 
-##Objeto
-Una instancia de una clase
+##Objetos
+Una instancia   de una clase
+*Encapsulación. Funciones y información son unidas
