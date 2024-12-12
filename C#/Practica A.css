@@ -1,0 +1,152 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        //PRACTICA A
+        //1. Operaciones aritmeticas
+        string pregunta = "Ingrese la ecuación: ";
+        string respuesta = "El resultado es: ";
+        string input;
+        int ec1, ec2, ec3, ec4;
+        float ec5;
+
+        //1) 3 + 5 * 2 / 2 – 1
+        Console.WriteLine(pregunta);
+        input = Console.ReadLine();
+        ec1 = 3 + 5 * 2 / 2 - 1;
+        Console.WriteLine(respuesta + ec1);
+
+        //2) 3 + 10 / 2 - 1
+        Console.WriteLine(pregunta);
+        input = Console.ReadLine();
+        ec2 = 3 + 10 / 2 - 1;
+        Console.WriteLine(respuesta + ec2);
+
+        //3) 3 + 5 – 1
+        Console.WriteLine(pregunta);
+        input = Console.ReadLine();
+        ec3 = 3 + 5 - 1;
+        Console.WriteLine(respuesta + ec3);
+
+        //4) 8 - 1
+        Console.WriteLine(pregunta);
+        input = Console.ReadLine();
+        ec4 = 8 - 1;
+        Console.WriteLine(respuesta + ec4);
+
+        //5) 1 / 3 * 3
+        Console.WriteLine(pregunta);
+        input = Console.ReadLine();
+        ec5 = 1 / 3 * 3;
+        Console.WriteLine(respuesta + ec5);
+
+        //1.2 Potencia de un número
+        int n1;
+        Console.WriteLine("Ingrese un número: ");
+        n1 = int.Parse(Console.ReadLine());
+        int potencia = n1 * n1;
+        Console.WriteLine("La potencia es: " + potencia);
+
+        //1.3 Conversion de metros a yardas
+        double yardas = 0.9144;
+        double medida;
+
+        Console.WriteLine("Ingrese las yardas: ");
+        medida = int.Parse(Console.ReadLine());
+        double m1 = yardas * medida;
+        Console.WriteLine("Numero en metros: " + m1);
+
+        // 1.4 Cálculo de depreciación de un auto
+        Console.Write("Valor original del auto: ");
+        int carro = int.Parse(Console.ReadLine());
+        Console.Write("Ingrese el número de años: ");
+        int años = int.Parse(Console.ReadLine());
+        double depreciacion = carro * (0.80 / años);
+        Console.WriteLine("Devaluación tras 1 año: " + depreciacion * 1);
+        Console.WriteLine("Devaluación tras 2 años: " + depreciacion * 2);
+        Console.WriteLine("Devaluación tras 3 años: " + depreciacion * 3);
+        Console.WriteLine("Devaluación tras 4 años: " + depreciacion * 4);
+        Console.WriteLine("Devaluación tras 5 años: " + depreciacion * 5);
+
+        // 1.5 Cálculo de deducción de impuestos
+        Console.Write("Ingrese el salario mensual: ");
+        int salario = int.Parse(Console.ReadLine());
+        int impuestoFijo = 900;
+        float impuestoPorcentual = 0.015f;
+        float impuestoDeducir = ((salario - impuestoFijo) * impuestoPorcentual) + impuestoFijo;
+        float sueldoNeto = salario - impuestoDeducir;
+        Console.WriteLine("El impuesto total a deducir es: " + impuestoDeducir);
+        Console.WriteLine("El sueldo neto a recibir es: " + sueldoNeto);
+
+        // 1.6 Operaciones
+        int result1, result2, result3, result4, result7;
+        float result5;
+        double result6;
+
+        // 1) 3 * 4 - int
+        result1 = 3 * 4;
+        Console.WriteLine("El resultado de 3 * 4 es: " + result1);
+
+        // 2) 12 / 3 - int
+        result2 = 12 / 3;
+        Console.WriteLine("El resultado de 12 / 3 es: " + result2);
+
+        // 3) 12 % 3 - int
+        result3 = 12 % 3;
+        Console.WriteLine("El resultado del modulo 12 % 3 es: " + result3);
+
+        // 4) 12 % 7 - int
+        result4 = 12 % 7;
+        Console.WriteLine("El resultado de 12 % 7 es: " + result4);
+
+        // 5) 3 + 3.0 - float
+        result5 = 3 + 3.0f;
+        Console.WriteLine("El resultado de 3 + 3.0 es: " + result5);
+
+        // 6) 10 / 100 - float
+        result6 = 10.0 / 100;
+        Console.WriteLine("El resultado de 10 / 100 es: " + result6);
+
+        // 7) Potencia 3 a la 2
+        result7 = (int)Math.Pow(3, 2);
+        Console.WriteLine("El resultado es: " + result7);
+
+        // 1.7 Comparaciones
+        int a = 10;
+        int b = 20;
+        Console.WriteLine("A = " + a);
+        Console.WriteLine("B = " + b);
+
+        // i. (a > b)
+        Console.WriteLine("A es mayor que B es: " + (a > b));
+
+        //ii. (a < b)
+        Console.WriteLine("A es menor que B es: " + (a > b));
+
+        //iii. (a == b)
+        Console.WriteLine("A es igual que B es: " + (a == b));
+
+        //iv. (a != b)
+        Console.WriteLine("A no es igual que B es: " + (a != b));
+
+        //v. (a + b) > 100
+        Console.WriteLine("El resultado de A + B es mayor que 100 es: " + (a + b > 100));
+
+        //vi. (a - b) == 0
+        Console.WriteLine("El resultado de A - B es igual a 0 es: " + (a - b == 0));
+
+        //vii. (a*b) > 500
+        Console.WriteLine("El resultado de A por B es mayor que 500 es: " + (a * b > 500));
+
+        //viii. (a * b) < 100
+        Console.WriteLine("El resultado de A por B es menor que 100 es: " + (a * b < 100));
+
+        //ix. (a - b) < 0
+        Console.WriteLine("A - B es menor que 0 es: " + (a - b < 0));
+
+        //x. a < 20
+        Console.WriteLine("A es menor que 20 es: " + (a < 20));
+    }
+}
